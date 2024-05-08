@@ -132,9 +132,9 @@ while True:
       seats_to_book = int(input("Enter seats number to book: "))
 
       for i in range(seats_to_book):
-        one = int(input("Enter seat one"))
-        two = int(input("Enter seat two"))
-        seats_to_book_list.append((one, two))
+        row = int(input("Enter row: "))
+        col = int(input("Enter column: "))
+        seats_to_book_list.append((row, col))
       
       hall.book_seats(id, seats_to_book_list)
     elif option == 3:
@@ -161,9 +161,9 @@ while True:
       seats_to_book = int(input("Enter seats number to book: "))
 
       for i in range(seats_to_book):
-        one = int(input("Enter seat one"))
-        two = int(input("Enter seat two"))
-        seats_to_book_list.append((one, two))
+        row = int(input("Enter row: "))
+        col = int(input("Enter column: "))
+        seats_to_book_list.append((row, col))
       
       hall.book_seats(id, seats_to_book_list)
     elif option == 2:
